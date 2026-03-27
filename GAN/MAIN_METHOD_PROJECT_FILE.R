@@ -48,9 +48,9 @@ if(pre_process_synthetic_data){
 
 #------------------------------------------------------------------------------------------------------------------------------------------
 #profile_dirs <- c(paste(here(), "pre_process_data", sep="/"))
-profile_dirs <- "/home/emilie/Documents/Fil_rouge/Data/Test/Test/pre_processed"
+profile_dirs <- "pre_processed"
 #fake_profile_dirs <- c(paste(here(), "prediction_generator", sep="/"))
-fake_profile_dirs <- "/home/emilie/Documents/Fil_rouge/Data/Test/Test/fake"
+fake_profile_dirs <- "Test/fake"
 
 #settings that are carried throughout the analysis
 settings <- list(number_of_dyes = 3, #the number of dyes in the dataset
@@ -108,7 +108,7 @@ if(create_smoothed_profile_from_real_profile){
         
         # Output path for the prediction vector
         #output_path    = paste(here(),"label_data", sampleName, sep="/")
-        output_path    = paste("/home/emilie/Documents/Fil_rouge/Data/Test/Test/labels", sampleName,sep="/")
+        output_path    = paste("Test/labels", sampleName,sep="/")
       )
       
       raw_profile <- read.table(config$features_path, sep=";", header=TRUE, row.names = NULL,fill = TRUE)
